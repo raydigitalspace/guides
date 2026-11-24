@@ -70,7 +70,7 @@ dialog{margin:auto;border:0;border-radius:22px;background:var(--card);color:var(
 
 </dialog><footer class="w">Ray Chua. Personal branding and content strategy.</footer>
 <script>
-const ENDPOINT="",GUIDE="formats",$=id=>document.getElementById(id);
+const ENDPOINT="https://script.google.com/macros/s/AKfycbzSZ3yVK4nFLqXIDfjCD1sfxyvbI2NpoIbW5woM8iUpMtZZ6VoktbwyaAgeKLYtw-RT/exec",GUIDE="formats",$=id=>document.getElementById(id);
 const from=(new URLSearchParams(location.search).get('from')||'').slice(0,40);let token='';
 const post=async d=>{const r=await fetch(ENDPOINT,{method:'POST',body:JSON.stringify(d)});return r.json()};
 const fail=(m,el)=>{$('err').textContent=m;$('err').hidden=false;if(el)el.focus()};
