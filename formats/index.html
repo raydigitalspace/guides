@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Formats that actually work. | Ray Chua</title>
+<meta name="description" content="14 storytelling formats, each broken down with a real post of mine, so you know what to post this week."><meta name="robots" content="noindex">
+<meta property="og:title" content="Formats that actually work."><meta property="og:description" content="14 storytelling formats, each broken down with a real post of mine, so you know what to post this week."><meta property="og:image" content="https://raydigitalspace.github.io/guides/assets/formats-cover.jpg">
+<style>
+@font-face{font-family:Manrope;font-weight:400;src:url(../fonts/manrope-latin-400-normal.woff2);font-display:swap}
+@font-face{font-family:Manrope;font-weight:600;src:url(../fonts/manrope-latin-600-normal.woff2);font-display:swap}
+@font-face{font-family:Manrope;font-weight:800;src:url(../fonts/manrope-latin-800-normal.woff2);font-display:swap}
+@font-face{font-family:Playfair;font-style:italic;font-weight:600;src:url(../fonts/playfair-display-latin-600-italic.woff2);font-display:swap}
+:root{--bg:#f4f1ea;--ink:#1f2f29;--sub:#55635d;--green:#2f6b54;--soft:#dbe8e0;--line:#d5d2c6;--card:#fffdf8;--err:#a3341f;color-scheme:light}
+*{box-sizing:border-box;margin:0}[hidden]{display:none!important}html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font:400 17px/1.6 Manrope,system-ui,sans-serif;}
+.w{max-width:1040px;margin:auto;padding-left:max(20px,env(safe-area-inset-left));padding-right:max(20px,env(safe-area-inset-right))}
+h1,h2{font-weight:800;letter-spacing:-.03em;line-height:1.05;text-wrap:balance}h1{font-size:clamp(40px,8vw,72px)}h2{font-size:clamp(30px,5vw,44px)}
+em{font-family:Playfair,Georgia,serif;font-style:italic;font-weight:600;color:var(--green);letter-spacing:0}
+img{max-width:100%;display:block}a{color:var(--green)}#done:focus{outline:none}:focus-visible{outline:3px solid var(--green);outline-offset:3px}
+header{display:flex;justify-content:space-between;gap:16px;padding-block:20px;font-weight:800}header a{font-weight:600;font-size:15px}
+.hero{display:grid;gap:32px;padding-block:20px 56px}.hero p,.copy p{color:var(--sub)}.hero p{margin:18px 0 24px;font-size:18px;max-width:46ch}
+.cover{width:min(290px,76%);margin:auto;box-shadow:0 18px 44px #1f2f2930;border-radius:4px}
+.btn{display:inline-block;border:0;border-radius:99px;background:var(--green);color:#fff;font:600 17px Manrope,system-ui,sans-serif;padding:16px 28px;text-decoration:none;cursor:pointer;text-align:center}.btn:hover{background:#24543f}.btn[disabled]{opacity:.6;cursor:wait}
+section{padding-block:56px}.story{padding-block:36px 56px}.story{background:var(--soft)}.story .w,.work .w,.inside{display:grid;gap:32px}
+.story img{border-radius:18px;aspect-ratio:4/5;object-fit:cover;width:100%}.copy{display:grid;gap:16px;align-content:center;max-width:58ch}.copy strong{color:var(--ink)}
+.inside ul{list-style:none;padding:0;margin-top:22px}.inside li{padding:15px 0;border-top:1px solid var(--line);color:var(--sub)}.inside li b{display:block;color:var(--ink)}
+.peek{border:1px solid var(--line)}.proof{font-size:15px;color:var(--sub);margin-top:12px}
+.get{max-width:600px;margin:auto;background:var(--card);border:1px solid var(--line);border-radius:22px;padding:clamp(24px,5vw,40px);scroll-margin-top:16px}
+form{display:grid;gap:14px;margin-top:22px}label{font-weight:600;font-size:15px}
+input[type=text],input[type=email]{display:block;width:100%;margin-top:6px;padding:14px 16px;border:1.5px solid #a9aea6;border-radius:12px;font:inherit;background:#fff;color:var(--ink)}
+.tick{display:flex;gap:10px;font-weight:400;color:var(--sub);line-height:1.45}.tick input{width:20px;height:20px;flex:none;accent-color:var(--green)}
+.hp{position:absolute;left:-9999px}.err{color:var(--err);font-weight:600}.fine{font-size:14px;color:var(--sub)}
+.done{display:grid;gap:16px;justify-items:start}.pick{display:flex;flex-wrap:wrap;gap:10px}.pick button{border:1.5px solid var(--green);background:none;color:var(--green);border-radius:99px;font:600 15px Manrope,system-ui,sans-serif;padding:11px 18px;cursor:pointer}.pick button:disabled{opacity:.5}
+.work{background:var(--ink);color:#fff}.work em{color:#a9d6bf}.work p{color:#c8d3cd}.work .btn{background:#f4f1ea;color:var(--ink);justify-self:start}.work .w>div{display:grid;gap:18px;max-width:60ch}.work a:not(.btn){color:#a9d6bf}
+footer{padding-block:26px;font-size:14px;color:var(--sub)}
+.here{font-size:15px;background:var(--bg);padding:12px 16px;border-radius:12px}.lead{margin-top:14px;color:var(--sub)}
+.offer{display:grid;gap:32px;align-items:center}.offer .btn{margin-top:22px}
+dialog{margin:auto;border:0;border-radius:22px;background:var(--card);color:var(--ink);width:min(520px,calc(100% - 32px));max-height:92dvh;overflow:auto;padding:clamp(24px,5vw,40px)}dialog::backdrop{background:#1f2f29b3}
+.x{position:absolute;top:10px;right:10px;width:44px;height:44px;border:0;background:none;font-size:28px;color:var(--ink);cursor:pointer}
+@media(min-width:760px){.offer{grid-template-columns:.8fr 1.2fr}}
+@media(min-width:760px){.hero{grid-template-columns:1.2fr .8fr;align-items:center}.story .w{grid-template-columns:.8fr 1.2fr;gap:56px}.inside{grid-template-columns:1fr 1fr;gap:56px;align-items:center}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style></head><body>
+<header class="w"><span>ray chua</span><a href="https://www.instagram.com/ray.chuaa/">@ray.chuaa</a></header>
+<main>
+<section class="story"><div class="w"><img src="../assets/about-portrait.jpg" alt="Ray Chua"><div class="copy">
+<p class="here">Your free guide is just below. First, who’s it from?</p>
+<h1>Hi, I’m <em>Ray.</em></h1>
+<p>I started editing videos for other people at 17. At 18 I was scripting, filming and posting for clients, and across my agency projects I worked on content for six brands.</p>
+<p>All that time, <strong>my own page stayed empty.</strong> I was getting paid to help other people post, and I couldn’t post for myself.</p>
+<p>At 19, working in Shanghai, I finally posted my first video. I couldn’t open the app after. Three months of posting later, my videos had reached <strong>2.3 million views.</strong></p>
+<p>Now I help businesses and people turn what they’ve lived and what they know into content. This guide is what I’d hand you if we were sitting down together.</p>
+</div></div></section>
+<section class="w inside"><div><h2>What’s <em>inside.</em></h2><p class="lead">14 storytelling formats, each broken down with a real post of mine, so you know what to post this week.</p><ul><li><b>The hook on screen</b>The words people see in the first second, ready to adapt.</li><li><b>Why it works</b>Five reasons each format holds attention.</li><li><b>How a business uses it</b>The same structure, told through a business.</li></ul></div><div><img class="peek" src="../assets/formats-inside.jpg" alt="Page 3 of the guide: the split-screen format, with the hook, the caption and why it works"><p class="proof">The first format in the guide came from a post with 3.8K likes and 598 shares.</p></div></section>
+<section class="w offer" id="get"><img class="cover" src="../assets/formats-cover.jpg" alt="Cover of the guide"><div><h2>Formats that <em>actually work.</em></h2><p class="lead">It’s free. Tell me where to send it.</p><button class="btn ask" type="button">Get the free guide</button></div></section>
+<section class="work" id="work"><div class="w"><div><h2>Want to do this <em>together?</em></h2><p>Bring your stories. I’ll help with the ideas, scripts and edits, or teach you to make it yourself. I also build landing pages and websites for businesses.</p><p>Start with a few questions. I read your answers and reply by email, with a call if it helps.</p><a class="btn" href="https://form.typeform.com/to/IFkJ6hF7" target="_blank" rel="noopener">Apply to work with me</a><p><a href="https://raydigitalspace.github.io/personal-branding-website/">See my experience</a> or DM me WORK on <a href="https://www.instagram.com/ray.chuaa/">Instagram</a>.</p></div></div></section>
+</main>
+<dialog id="pop" aria-labelledby="dt"><button class="x" id="x" type="button" aria-label="Close">×</button>
+<div id="ask"><h2 id="dt">Where should I <em>send it?</em></h2><p class="lead">Send me your email and I’ll give you the guide. It opens right away.</p>
+<form id="f" novalidate>
+<label>First name<input type="text" id="name" autocomplete="given-name" maxlength="40" required></label>
+<label>Email<input type="email" id="email" autocomplete="email" inputmode="email" maxlength="120" required></label>
+<div class="hp" aria-hidden="true"><label>Website<input type="text" id="website" tabindex="-1" autocomplete="off"></label></div>
+<label class="tick"><input type="checkbox" id="tips"><span>Also email me your content tips and new guides. I can stop anytime.</span></label>
+<p class="err" id="err" role="alert" hidden></p>
+<button class="btn" id="go">Send me the guide</button>
+<p class="fine">Your guide opens here and goes to your inbox too. I use your email to send it, and only send more if you tick the box. To have your details deleted, message me <a href="https://www.instagram.com/ray.chuaa/">@ray.chuaa</a>.</p>
+</form></div>
+<div class="done" id="done" tabindex="-1" hidden><h2>It’s <em>yours.</em></h2><a class="btn" id="open" target="_blank" rel="noopener">Open the guide</a><p id="sent" class="fine"></p>
+<div><p><b>One quick question, so I know who I’m making these for:</b></p><div class="pick" id="pick" style="margin-top:10px"><button data-v="business">I run a business</button><button data-v="personal brand">I’m building a personal brand</button><button data-v="looking around">Just looking</button></div><p id="thanks" class="fine" role="status"></p></div></div>
+
+</dialog><footer class="w">Ray Chua. Personal branding and content strategy.</footer>
+<script>
+const ENDPOINT="",GUIDE="formats",$=id=>document.getElementById(id);
+const from=(new URLSearchParams(location.search).get('from')||'').slice(0,40);let token='';
+const post=async d=>{const r=await fetch(ENDPOINT,{method:'POST',body:JSON.stringify(d)});return r.json()};
+const fail=(m,el)=>{$('err').textContent=m;$('err').hidden=false;if(el)el.focus()};
+$('f').onsubmit=async e=>{e.preventDefault();$('err').hidden=true;
+ const name=$('name').value.trim(),email=$('email').value.trim();
+ if(!name)return fail('Add your first name.',$('name'));
+ if(!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email))return fail('Check your email address. It should look like name@example.com.',$('email'));
+ if(!ENDPOINT)return fail('This page isn’t connected yet. DM @ray.chuaa for the guide.');
+ $('go').disabled=true;$('go').textContent='Getting your guide…';
+ try{const r=await post({guide:GUIDE,name,email,tips:$('tips').checked,from,website:$('website').value});
+  if(!r.ok||!/^https:\/\//.test(r.link||''))throw 0;token=r.token||'';
+  $('open').href=r.link;$('sent').textContent=r.emailed?'I’ve sent a copy to '+email+'. Check spam or promotions if you don’t see it.':'Save the guide now. The email copy may take up to a day.';
+  $('ask').hidden=true;$('done').hidden=false;$('done').focus()
+ }catch(_){fail('That didn’t go through. Try again, or DM @ray.chuaa and I’ll send it.')}
+ $('go').disabled=false;$('go').textContent='Send me the guide'};
+$('pick').onclick=async e=>{const v=e.target.dataset.v;if(!v)return;[...$('pick').children].forEach(b=>b.disabled=true);
+ try{const r=await post({action:'about',token,about:v});if(!r.ok)throw 0;$('thanks').textContent=v==='business'?'Thank you. If you’d like help with your content, close this and tap Apply just below.':'Thank you, that helps.'}
+ catch(_){$('thanks').textContent='That didn’t save, but your guide is still yours.';[...$('pick').children].forEach(b=>b.disabled=false)}};
+document.querySelectorAll('.ask').forEach(b=>b.onclick=()=>$('pop').showModal());$('x').onclick=()=>$('pop').close();$('pop').onclick=e=>{if(e.target===$('pop'))$('pop').close()};
+</script></body></html>
